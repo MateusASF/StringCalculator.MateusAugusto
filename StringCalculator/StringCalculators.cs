@@ -8,7 +8,6 @@
                 return 0;
 
             var parts = numbers.Split(",");
-
             var exceedsCount = parts.Length > 2;
             var consecutiveCommands = parts.Any(x => x == "");
             var nomNumbers = parts.Any(x => !int.TryParse(x, out _));
