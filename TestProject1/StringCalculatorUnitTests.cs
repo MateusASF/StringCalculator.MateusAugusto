@@ -8,7 +8,7 @@ namespace StringCalculator.UnitTests
         [Fact]
         public void StringCalculator_EmptyString_ResultShouldBeZero()
         {
-            var sut = new StringCalculators();
+            var sut = new Domain.StringCalculators();
             var result = sut.Add("");
             result.Should().Be(0);
         }
