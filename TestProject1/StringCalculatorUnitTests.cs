@@ -14,6 +14,17 @@ namespace StringCalculator.UnitTests
         }
 
         [Fact]
+        public void StringCalculator_Null_ResultShouldBeZero()
+        {
+            var sut = new StringCalculators();
+
+            int result = sut.Add(null);
+
+            Assert.Equal(0, result);
+        }
+
+
+        [Fact]
         public void Add_WhenStringIsNull_ShouldReturnZero()
         {
             var sut = new StringCalculators();
